@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 
 export type ButtonProps = {
     variant?: 'primary' | 'secondary';
+    size?: number;
 } & JSX.IntrinsicElements['button'];
 
 export const Button: FunctionComponent<ButtonProps> = ({ children, variant = 'primary', ...props}) => {
